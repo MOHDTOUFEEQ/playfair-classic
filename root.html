@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfair Cipher - Toufeeq Mohammed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Playfair Cipher - Cyber Security Assignment</h1>
+        <p class="details">Name: Toufeeq Mohammed | Student ID: 21588778 | Module: Cyber Security</p>
+
+        <h2>Original Playfair Cipher</h2>
+
+        <div class="form-group">
+            <label for="key">Enter Key:</label>
+            <input type="text" id="key" placeholder="Enter Key (e.g., SECRET)">
+        </div>
+
+        <div class="form-group">
+            <label for="inputText">Enter Text:</label>
+            <textarea id="inputText" rows="4" placeholder="Enter the text to encrypt/decrypt..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button onclick="encryptText()">Encrypt Text</button>
+            <button onclick="decryptText()">Decrypt Text</button>
+        </div>
+
+        <div class="form-group">
+            <label for="outputText">Output:</label>
+            <textarea id="outputText" rows="4" readonly></textarea>
+        </div>
+
+        <h2>Updated Playfair Cipher (Handle Symbols and Numbers)</h2>
+
+        <div class="form-group">
+            <label for="updatedKey">Enter Updated Key:</label>
+            <input type="text" id="updatedKey" placeholder="Enter Key (e.g., SECRET@123)">
+        </div>
+
+        <div class="form-group">
+            <label for="updatedInputText">Enter Text (Including Symbols and Numbers):</label>
+            <textarea id="updatedInputText" rows="4" placeholder="Enter the text to encrypt/decrypt..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button onclick="updatedEncryptText()">Encrypt Updated Text</button>
+            <button onclick="updatedDecryptText()">Decrypt Updated Text</button>
+        </div>
+
+        <div class="form-group">
+            <label for="updatedOutputText">Output (Updated Cipher):</label>
+            <textarea id="updatedOutputText" rows="4" readonly></textarea>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
